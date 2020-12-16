@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Devise_p3</a>
+    <a class="navbar-brand" href="/">Devise_p3</a>
+    <!-- <%# link_to "Devise_p3", root_path, method: 'GET', class: "navbar-brand" %> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,7 +9,7 @@
       <ul class="navbar-nav">
 
         <% if user_signed_in? %>
-        <li class="nav-item">     <!--編輯頁面未研究-->
+        <li class="nav-item">     <!--編輯頁面尚未研究-->
           <%= link_to '編輯', edit_user_registration_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
