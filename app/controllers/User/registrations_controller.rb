@@ -24,6 +24,10 @@ class User::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+  def update_resource(resource, params)
+    resource.update(params)
+  end
+
   # DELETE /resource
   # def destroy
   #   super
